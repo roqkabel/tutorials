@@ -1,0 +1,98 @@
+/* Importing font styles from Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+
+/* Remove margin from body element */
+
+body{
+    margin: 0;
+    font-family: 'Oswald';
+}
+
+/* Style navigation */
+.nav-menu{
+   display: flex;
+   justify-content: space-between;
+   background-color: black;
+   align-items: center;
+   height: 50px;
+}
+
+/* Style menu title */
+.nav-menu h5{
+    color: white;
+    margin-left: 10px;
+    font-size: 24px;
+    font-family: 'Oswald';
+    font-weight: bold;
+}
+
+
+/* style menu list parent */
+.menu-list{
+    display: flex;
+    list-style-type: none;
+}
+
+/* style menu list child */
+.menu-list li{
+    margin-right: 50px;
+    color: white;
+    font-family: 'Oswald';
+}
+
+/* Hero Section */
+
+.hero{
+    height: 30rem;
+    background-image: url('https://cdn.pixabay.com/photo/2021/11/15/11/00/barber-shop-6797761_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-wrapper{
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-top: 7rem;
+    background-color: rgba(252, 252, 252, 0.627);
+}
+
+.hero-wrapper h1{
+    font-size: 40px;
+    color: white;
+    text-transform:uppercase;
+    background-color: black;
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem;
+    /* padding: 4rem; */
+}
+
+.hero-wrapper h1 .highlight{
+    background-color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.hero-wrapper p{
+    color: rgb(1, 1, 1);
+}
+.hero-wrapper button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
+    /* height: 50px; */
+    border: 1px solid black;
+    font-size: 1.5rem;
+    font-family: 'Oswald';
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+
