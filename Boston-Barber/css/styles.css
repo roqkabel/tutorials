@@ -97,8 +97,6 @@ body{
 }
 
 
-/* Add Hover Pseodo class to Button */
-
 
 /* 
 
@@ -112,4 +110,57 @@ When the button is hover
 
 .hero-wrapper button:hover{
     background-color: red;
+}
+
+
+/* ROW GRID */
+
+.row{
+    display: grid;
+    gap: 5rem;
+    /*
+    NOTE:
+    The 3 (1fr) means : generate only 3 columns. 
+    */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.service-container{
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.service-container h4{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.service-item img{
+    /* width: 300px; */
+    width: 100%;
+    height: 250px;
+
+    /* set rounded corners for images */
+    border-radius: 10px;
+
+    /* make image to look black and white color */
+    filter: grayscale(10);
+    object-fit: cover;
+}
+
+.service-item .name{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.service-item .price{
+    color: red;
+    font-size: 1rem;
+}
+
+.service-item .description{
+    font-size: 1rem;
+    opacity: 0.7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
