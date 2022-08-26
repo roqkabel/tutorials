@@ -1,102 +1,97 @@
 /* Importing font styles from Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
 
 /* Remove margin from body element */
 
-body{
-    margin: 0;
-    font-family: 'Oswald';
+body {
+  margin: 0;
+  font-family: "Oswald";
 }
 
 /* Style navigation */
-.nav-menu{
-   display: flex;
-   justify-content: space-between;
-   background-color: black;
-   align-items: center;
-   height: 50px;
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  height: 50px;
 }
 
 /* Style menu title */
-.nav-menu h5{
-    color: white;
-    margin-left: 10px;
-    font-size: 24px;
-    font-family: 'Oswald';
-    font-weight: bold;
+.nav-menu h5 {
+  color: white;
+  margin-left: 10px;
+  font-size: 24px;
+  font-family: "Oswald";
+  font-weight: bold;
 }
 
-
 /* style menu list parent */
-.menu-list{
-    display: flex;
-    list-style-type: none;
+.menu-list {
+  display: flex;
+  list-style-type: none;
 }
 
 /* style menu list child */
-.menu-list li{
-    margin-right: 50px;
-    color: white;
-    font-family: 'Oswald';
+.menu-list li {
+  margin-right: 50px;
+  color: white;
+  font-family: "Oswald";
 }
 
 /* Hero Section */
 
-.hero{
-    height: 30rem;
-    background-image: url('https://cdn.pixabay.com/photo/2021/11/15/11/00/barber-shop-6797761_1280.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.hero {
+  height: 30rem;
+  background-image: url("https://cdn.pixabay.com/photo/2021/11/15/11/00/barber-shop-6797761_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.hero-wrapper{
-    padding: 10px;
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    padding-top: 7rem;
-    background-color: rgba(252, 252, 252, 0.627);
+.hero-wrapper {
+  padding: 10px;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  padding-top: 7rem;
+  background-color: rgba(252, 252, 252, 0.627);
 }
 
-.hero-wrapper h1{
-    font-size: 40px;
-    color: white;
-    text-transform:uppercase;
-    background-color: black;
-    width: fit-content;
-    margin: auto;
-    padding: 0.5rem;
-    /* padding: 4rem; */
+.hero-wrapper h1 {
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  background-color: black;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem;
+  /* padding: 4rem; */
 }
 
-.hero-wrapper h1 .highlight{
-    background-color: red;
-    padding-left: 10px;
-    padding-right: 10px;
+.hero-wrapper h1 .highlight {
+  background-color: red;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-
-.hero-wrapper p{
-    color: rgb(1, 1, 1);
+.hero-wrapper p {
+  color: rgb(1, 1, 1);
 }
-.hero-wrapper button{
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: black;
-    color: white;
-    /* height: 50px; */
-    border: 2px solid black;
-    font-size: 1.5rem;
-    font-family: 'Oswald';
-    border-radius: 0.1rem;
-    cursor: pointer;
+.hero-wrapper button {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: black;
+  color: white;
+  /* height: 50px; */
+  border: 2px solid black;
+  font-size: 1.5rem;
+  font-family: "Oswald";
+  border-radius: 0.1rem;
+  cursor: pointer;
 }
-
-
 
 /* 
 
@@ -108,59 +103,98 @@ When the button is hover
 
 */
 
-.hero-wrapper button:hover{
-    background-color: red;
+.hero-wrapper button:hover {
+  background-color: red;
 }
-
 
 /* ROW GRID */
 
-.row{
-    display: grid;
-    gap: 5rem;
-    /*
+.row {
+  display: grid;
+  gap: 5rem;
+  /*
     NOTE:
     The 3 (1fr) means : generate only 3 columns. 
     */
-    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.service-container{
-    width: 90%;
-    margin: auto;
-    padding-top: 10px;
+.service-container {
+  width: 90%;
+  margin: auto;
+  padding-top: 10px;
 }
 
-.service-container h4{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
+.service-container h4 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
 }
-.service-item img{
-    /* width: 300px; */
-    width: 100%;
-    height: 250px;
+.service-item img {
+  /* width: 300px; */
+  width: 100%;
+  height: 250px;
 
-    /* set rounded corners for images */
-    border-radius: 10px;
+  /* set rounded corners for images */
+  border-radius: 10px;
 
-    /* make image to look black and white color */
-    filter: grayscale(10);
-    object-fit: cover;
-}
-
-.service-item .name{
-    font-size: 1.4rem;
-    font-weight: bold;
+  /* make image to look black and white color */
+  filter: grayscale(10);
+  object-fit: cover;
 }
 
-.service-item .price{
+.service-item .name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.service-item .price {
+  color: red;
+  font-size: 1rem;
+}
+
+.service-item .description {
+  font-size: 1rem;
+  opacity: 0.7;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* THE ~ TIME ~ TABLE */
+
+.timetable-container {
+  background-color: rgb(248, 247, 247);
+  width: 700px;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.timetable-container h4{
+    font-size: 2rem;
+}
+
+.timetable-container .paragraph{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Styling the table */
+
+table {
+  width: 100%;
+}
+
+td {
+  border: 1px solid rgb(190, 180, 180) !important;
+  padding: 0.3rem;
+  color: rgba(0, 0, 0, 0.7);
+
+}
+
+table .paragraph{
+    color: aliceblue;
+}
+
+td.hightlight{
     color: red;
-    font-size: 1rem;
-}
-
-.service-item .description{
-    font-size: 1rem;
-    opacity: 0.7;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
